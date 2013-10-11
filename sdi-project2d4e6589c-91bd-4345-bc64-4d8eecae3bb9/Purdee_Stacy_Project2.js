@@ -13,7 +13,8 @@ var numChores = 3;
 var arrChoresAre = ["wash dishes", "vacuum", " and dust"];
 var arrFavBooks = [" Beginning JavaScript ", " JavaScript for Absolute Beginners ", " and Step-by-Step JavaScript "];
 var arrMinsPerBook = [45, 20, 30];
-var booDidStudy = true;
+var booLunch = true;
+var firstPrompt;
 var secondPrompt;
 
 
@@ -21,12 +22,12 @@ console.log("My name is " + strName + " and I have " + numChores + " chores to d
 console.log("My chores are " + arrChoresAre + " .");
 
 //Prompt
-prompt("Would you like too help with my chores?");
+firstPrompt = prompt("Would you like too help with my chores?");
 
 //Procedure
 var hoursForHomework = function (freeHours) {
 
-if (freeHours > 1) {
+if (firstPrompt === true) {
     console.log("I have " + freeHours + " hours of homework to do before I can do my chores or cook lunch.");
 
 } else {
@@ -43,8 +44,9 @@ secondPrompt = confirm("What would you like some lunch?");
 //Boolean Function
 
 var todaysLunch = function(Hamburgers, Fries, SweetTea){
-    
-if (Hamburgers + Fries + SweetTea > 0) {
+
+if (secondPrompt === booLunch){    
+//if (Hamburgers + Fries + SweetTea > 0) {
     var cook = true;
     return cook;
     
@@ -85,8 +87,6 @@ var homework = homeworkToFinish(" SDI Wk 2 Assignment", "SDI Reflection Video");
 console.log("I will do my Project first than I will make my video.");
 
 //Array Function
-//ArrayFunction
-
 var extraReadingMaterial = function(books, time){
     for (var bookNumber = 3; bookNumber < books.length; bookNumber++){
         var iRead = books;
