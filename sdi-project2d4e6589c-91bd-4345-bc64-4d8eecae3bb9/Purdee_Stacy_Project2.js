@@ -69,6 +69,15 @@ console.log( "I have read " + pagesRead + " pages of my textbook- Beginning Java
 ;
 
 //String Function
+var homeworkToFinish = function(project2, video){
+    var myProject2 = ("It is a very long assignment.");
+    var myVideo = ("It will not take long to make a new video.");
+    return project2 + myProject2 +  "but " + video + myVideo;
+};
+
+var homework = homeworkToFinish(" SDI Wk 2 Assignment", "SDI Reflection Video");
+
+console.log("I will do my Project first than I will make my video.");
 
 //Returned Values
 
