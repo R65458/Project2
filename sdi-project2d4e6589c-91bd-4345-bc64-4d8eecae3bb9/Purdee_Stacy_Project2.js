@@ -55,6 +55,18 @@ console.log("It is " + iWillCook + " that I will cook hamburgers, french fries a
 
 
 //Number Function
+var pagesToRead = function(pages){
+    while (pages < 0) {
+       console.log(pages + " pages left to read.");
+       var pages = pages + 9;
+    }
+return pages;
+};
+
+var pagesRead = pagesToRead(22);
+
+console.log( "I have read " + pagesRead + " pages of my textbook- Beginning JavaScript so far.")
+;
 
 //String Function
 
