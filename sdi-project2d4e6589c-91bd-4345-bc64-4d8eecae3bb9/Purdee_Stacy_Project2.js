@@ -24,13 +24,15 @@ console.log("My chores are " + arrChoresAre + " .");
 prompt("Would you like too help with my chores?");
 
 //Procedure
-var hoursForHomework = function(freeHours){
-    if (freeHours > 1) {
-        console.log("I have " + freeHours + " hours of homework to do before I can do my chores or cook lunch.");
-  } else {
-        console.log("I don't have time to do homework before lunch");
-  }
+var hoursForHomework = function (freeHours) {
 
+if (freeHours > 1) {
+    console.log("I have " + freeHours + " hours of homework to do before I can do my chores or cook lunch.");
+
+} else {
+    console.log("I don't have time to do homework before lunch");
+    
+    }
 };
 
 hoursForHomework(2);
@@ -41,16 +43,19 @@ secondPrompt = confirm("What would you like some lunch?");
 //Boolean Function
 
 var todaysLunch = function(Hamburgers, Fries, SweetTea){
-    if (Hamburgers + Fries + SweetTea > 0) {
-        var cook = true;
-        return cook;
-    } else {
-        var orderChineseTakeout = false;
-        return orderChineseTakeout;
+    
+if (Hamburgers + Fries + SweetTea > 0) {
+    var cook = true;
+    return cook;
+    
+} else {
+    var orderChineseTakeout = false;
+    return orderChineseTakeout;
     }
 };
 
 var iWillCook = todaysLunch(3,1,1);
+
 console.log("It is " + iWillCook + " that I will cook hamburgers, french fries and sweet tea for lunch.");
 
 
