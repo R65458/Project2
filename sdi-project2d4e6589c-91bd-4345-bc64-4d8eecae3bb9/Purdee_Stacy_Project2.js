@@ -102,6 +102,9 @@ console.log("I am reading from " + arrFavBooks + " to help learn JavaScript.");
 
 //Returned Values
 
+
+
 //Output
+console.log("I managed to get my project done. Hopefully I did better than last time.");
 
 //Finish
